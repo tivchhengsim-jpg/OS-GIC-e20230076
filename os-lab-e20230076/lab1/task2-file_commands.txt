@@ -1,0 +1,3 @@
+FILE1.txt
+FILE1_copy.txt
+FILE2_renamed.txt

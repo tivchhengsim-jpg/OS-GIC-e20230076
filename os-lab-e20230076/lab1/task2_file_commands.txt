@@ -1,0 +1,17 @@
+/home/gic-tiv-chhengsim/oslab-work/lab1/task2_files
+This is file1
+This is file2
+FILE1.txt
+FILE1_copy.txt
+FILE2.txt
+FILE1.txt
+FILE2_renamed.txt
+FILE1.txt
+FILE1_copy.txt
+FILE2_renamed.txt
+/home/gic-tiv-chhengsim/oslab-work/lab1/task2_files
+This is file stone
+This is file2
+panda.txt
+panda_renamed.txt
+stone.txt
