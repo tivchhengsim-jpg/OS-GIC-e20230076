@@ -1,0 +1,29 @@
+# Core 2 - Move and Copy Files
+
+# 1. Move first report using a relative path
+Current folder: incoming
+mv -- "$file1" ../reports/
+
+# 2. Move second report using absolute paths
+Current folder: lab2
+mv -- "$OSLAB_WORKSPACE/lab2/incoming/$file2" "$OSLAB_WORKSPACE/lab2/reports/"
+
+# 3. Copy both reports into Sales
+Current folder: lab2
+cp -- "reports/$file1" "reports/$file2" "TechCorp/$owner/"
+
+# 4. Create archive copy
+Current folder: lab2
+cp -- "reports/$file1" "TechCorp/$owner/archive/first-original.txt"
+
+# 5. Read report from HR
+Current folder: TechCorp/HR
+cat "../Sales/$file1"
+cat "$OSLAB_WORKSPACE/lab2/TechCorp/$owner/$file1"
+
+# 6. Path decision
+I used relative paths to copy the reports because I was
+already inside the lab2 directory.
+Absolute paths are useful when accessing files from other directories.
+Error: cat: 'reports/sales north.txt': No such file or directory
+Fix: ../../reports/sales north.txt
