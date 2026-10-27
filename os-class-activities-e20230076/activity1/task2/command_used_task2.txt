@@ -1,0 +1,13 @@
+# Task 2 - Directory Listing
+
+# Compile library version
+gcc dir_list_lib.c -o dir_list_lib
+
+# Run library version
+./dir_list_lib
+
+# Compile system call version
+gcc dir_list_sys.c -o dir_list_sys
+
+# Run system call version
+./dir_list_sys

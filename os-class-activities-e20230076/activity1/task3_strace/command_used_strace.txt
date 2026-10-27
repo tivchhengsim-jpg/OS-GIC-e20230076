@@ -1,0 +1,13 @@
+# Task 3 - Tracing System Calls
+
+# Trace the C library version
+strace -o strace_lib_task1.txt ../task1/file_creator_lib
+
+# Inspect the library version
+grep -E 'openat\(|write\(|close\(' strace_lib_task1.txt
+
+# Trace the system-call version
+strace -o strace_sys_task1.txt ../task1/file_creator_sys
+
+# Inspect the system-call version
+grep -E 'openat\(|write\(|close\(' strace_sys_task1.txt

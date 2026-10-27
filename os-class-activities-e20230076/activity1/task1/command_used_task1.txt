@@ -1,0 +1,23 @@
+# Task 1 - File Creator and Reader
+
+# Compile file creator using C library
+gcc file_creator_lib.c -o file_creator_lib
+
+# Run and verify
+./file_creator_lib
+cat output.txt
+
+# Compile file creator using system calls
+gcc file_creator_sys.c -o file_creator_sys
+
+# Run and verify
+./file_creator_sys
+cat output_sys.txt
+
+# Compile and run library-based reader
+gcc file_reader_lib.c -o file_reader_lib
+./file_reader_lib
+
+# Compile and run system-call-based reader
+gcc file_reader_sys.c -o file_reader_sys
+./file_reader_sys
